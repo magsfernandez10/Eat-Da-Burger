@@ -1,0 +1,14 @@
+.jumbotron {
+    padding: 32px;
+}
+
+h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* img {
+    display: inline-block;
+    width: 15%;
+    margin: 0 20px;
+} */
