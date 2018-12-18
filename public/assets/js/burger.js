@@ -1,11 +1,12 @@
 $(document).ready(function(){
     $(".eat-btn").on("click", function(event){
+        //console.log("you clicked me");
         var id = $(this).data("id");
         
         $.ajax("/api/burgers/" + id, {
             type: "PUT",
             data: {
-                eat: 1
+                devoured: 1
             }
         }).then(
             function(){

@@ -17,8 +17,9 @@ var orm = {
         });
     },
     // An example of colVal would be 'eat=true'
-    updateOne: function (table, col, val, condition, cb) {
-        var query = "UPDATE " + table + " SET " + col + "=" + val + " WHERE " + condition;
+    updateOne: function (table, colVal, cb) {
+        var query = "UPDATE " + table + " SET devoured = true WHERE " + colVal;
+        console.log(query);
         connection.query(query, function(err, result){
             if (err) throw err;
             cb(result);
